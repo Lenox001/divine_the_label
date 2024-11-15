@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Divine The Label</title>
+    <meta name="title" content="Grilli - Amazing & Delicious Food" />
+    <meta
+      name="description"
+      content="This is a Restaurant html template made by Lenox"
+    />
+     <link rel="icon" href="assets/images/favicon.webp" type="image/x-icon">
+
+    <!-- 
+    - favicon
+    
+  -->
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh; background-color: #2c3e50;">
+  <div class="circle" style="width: 50px; height: 50px; border-radius: 50%; background-color: #e74c3c; animation: bounce 1.5s infinite;"></div>
+  <p class="text" style="font-family: 'Arial', sans-serif; font-size: 24px; font-weight: bold; color: #ecf0f1; margin-top: 20px; animation: fadeIn 2s ease-in-out;">
+    Home of Divine
+  </p>
+</div>
+
+<!-- Add this style block to the same HTML file -->
+<style>
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+
+    <!-- 
+    - #TOP BAR
+  -->
+
+    <div class="topbar">
+      <div class="container">
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">
+            University Way,Nairobi City,KE
+          </span>
+        </address>
+
+        <div class="separator"></div>
+
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Daily : 6.00 am to 11.00 pm</span>
+        </div>
+
+        <a href="tel:+254759603214" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Give Us A Call</span>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="mailto:wawireangela6@gmail.com" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Email Us</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo" style="text-decoration: none; display: flex; align-items: center;">
+  <i class="fas fa-gem" style="color: #f5deb3; font-size: 3rem; margin-right: 10px;"></i>
+  <span style="font-size: 2rem; color: #f5deb3;">Divine The Label</span>
+</a>
+
+
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+
+                <span class="span">Home</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#menu" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Designs</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">About Us</span>
+              </a>
+            </li>
+
+            
+
+            <li class="navbar-item">
+              <a href="#contact" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visit Us</p>
+
+            <address class="body-4">
+              University Way,Nairobi
+            </address>
+
+            <p class="body-4 navbar-text">Open: 6.00 to 11pm</p>
+
+            <a href="mailto:booking@grilli.com" class="body-4 sidebar-link"
+              >wawireangela6@gmail.com</a
+            >
+
+            <div class="separator"></div>
+
+            <p class="contact-label">Order Request</p>
+
+            <a
+              href="tel:+254759603214"
+              class="body-1 contact-number hover-underline"
+            >
+              Call
+            </a>
+          </div>
+        </nav>
+
+        <a href="https://wa.me/254759603214?text=Hello%2C%20I%20would%20like%20to%20make%20a%20custom%20order." class="btn btn-secondary">
+          <span class="text text-1">Custom Order?</span>
+
+          <span class="text text-2" aria-hidden="true"> Custom Order?</span>
+        </a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero text-center" aria-label="home" id="home">
+          <ul class="hero-slider" data-hero-slider>
+            <li class="slider-item active" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-1.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Timeless Elegance
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                For the love of <br />
+                Sustainable Fashion
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Come  and experience the joy of exquisite, handmade fashion.
+              </p>
+
+              <a href="#menu" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Products</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Products</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-2.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Authentic Craftsmanship
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Unique & Personalized
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Experience  wearing exquisite, designs that celebrate style and individuality.
+              </p>
+
+              <a href="#menu" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Products</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Products</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-3.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Handcrafted Perfection
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Where every Design <br />
+                tells a story
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Indulge in the beauty of carefully crafted, one-of-a-kind garments that bring style and elegance to every occasion.
+              </p>
+
+              <a href="#menu" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Products</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Products</span
+                >
+              </a>
+            </li>
+          </ul>
+
+          <button
+            class="slider-btn prev"
+            aria-label="slide to previous"
+            data-prev-btn
+          >
+            <ion-icon name="chevron-back"></ion-icon>
+          </button>
+
+          <button
+            class="slider-btn next"
+            aria-label="slide to next"
+            data-next-btn
+          >
+            <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+          
+
+          <a href="https://wa.me/254759603214?text=Hello%2C%20I%20would%20like%20to%20place%20an%20order." class="hero-btn has-after" style="display: flex; align-items: center;">
+  <i class="fas fa-shopping-bag" style="font-size: 2rem; margin-right: 8px;"></i>
+  <span class="label-2 text-center span">Make Your Order</span>
+</a>
+
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section
+          class="section service bg-black-10 text-center"
+          aria-label="service"
+        >
+          <div class="container">
+            <p class="section-subtitle label-2">Divine & Royalty</p>
+
+            <h2 class="headline-1 section-title">We offer exceptional, handcrafted garments that showcase quality and style at Divine The Label.</h2>
+
+            <p class="section-text">
+              Divine The Label offers expertly crafted, handmade garments that are the perfect blend of style and comfort. Our creations are designed to stand the test of time, offering timeless elegance for every occasion.
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/service-1.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Breakfast"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Bags</a>
+                    </h3>
+
+                    <a href="#menu" class="btn-text hover-underline label-2"
+                      >View Products</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/service-2.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Appetizers"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Tops</a>
+                    </h3>
+
+                    <a href="#menu" class="btn-text hover-underline label-2"
+                      >View Products</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/service-3.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Drinks"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Others</a>
+                    </h3>
+
+                    <a href="#menu" class="btn-text hover-underline label-2"
+                      >View Products</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/shape-1.png"
+              width="246"
+              height="412"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-1 move-anim"
+            />
+            <img
+              src="./assets/images/shape-2.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2 move-anim"
+            />
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section
+          class="section about text-center"
+          aria-labelledby="about-label"
+          id="about"
+        >
+          <div class="container">
+            <div class="about-content">
+              <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+              <h2 class="headline-1 section-title">
+                Every Design Tells a Story
+              </h2>
+
+              <p class="section-text">
+              
+
+At Divine The Label, we take pride in crafting unique, handmade clothing that tells a story of artistry and passion. Each design is thoughtfully created to offer both beauty and comfort, ensuring every piece is as distinct as the wearer. Our commitment to quality and individuality shines through every stitch, making each garment a timeless addition to your wardrobe.
+              </p>
+
+              <div class="contact-label">Book Through Call</div>
+
+              <a
+                href="tel:+804001234567"
+                class="body-1 contact-number hover-underline"
+                >+254759603214</a
+              >
+
+              <a href="#" class="btn btn-primary">
+                <span class="text text-1">Read More</span>
+
+                <span class="text text-2" aria-hidden="true">Read More</span>
+              </a>
+            </div>
+
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.jpg"
+                width="570"
+                height="570"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+                data-parallax-item
+                data-parallax-speed="1"
+              />
+
+              <div
+                class="abs-img abs-img-1 has-before"
+                data-parallax-item
+                data-parallax-speed="1.75"
+              >
+                <img
+                  src="./assets/images/about-abs-image.jpg"
+                  width="285"
+                  height="285"
+                  loading="lazy"
+                  alt=""
+                  class="w-100"
+                />
+              </div>
+
+              
+            </figure>
+
+         
+          </div>
+        </section>
+
+        <!-- 
+        - #SPECIAL DISH
+      -->
+
+        <section class="special-dish text-center" aria-labelledby="dish-label">
+          <div class="special-dish-banner">
+            <img
+              src="./assets/images/special offer.png"
+              width="940"
+              height="900"
+              loading="lazy"
+              alt="special dish"
+              class="img-cover"
+            />
+          </div>
+
+         <div class="special-dish-content bg-black-10">
+  <div class="container">
+    <img
+      src="./assets/images/badge-1.png"
+      width="28"
+      height="41"
+      loading="lazy"
+      alt="badge"
+      class="abs-img"
+    />
+
+    <p class="section-subtitle label-2">Special Offer</p>
+
+    <h2 class="headline-1 section-title">Premium Handbag</h2>
+
+    <p class="section-text">
+      Discover luxury with our handcrafted  handbags, made with the finest materials and impeccable attention to detail.
+    </p>
+
+    <div class="wrapper">
+      <del class="del body-3">$150.00</del>
+
+      <span class="span body-1">$75.00</span>
+    </div>
+
+    <a href="#menu" class="btn btn-primary">
+      <span class="text text-1">View All </span>
+
+      <span class="text text-2" aria-hidden="true">View All</span>
+    </a>
+  </div>
+</div>
+
+
+          <img
+            src="./assets/images/shape-4.png"
+            width="179"
+            height="359"
+            loading="lazy"
+            alt=""
+            class="shape shape-1"
+          />
+
+          <img
+            src="./assets/images/shape-9.png"
+            width="351"
+            height="462"
+            loading="lazy"
+            alt=""
+            class="shape shape-2"
+          />
+        </section>
+
+        <!-- 
+        - #MENU
+      -->
+
+        <section class="section menu" aria-label="menu-label" id="menu">
+  <div class="container">
+    <p class="section-subtitle text-center label-2">
+      Special Selection
+    </p>
+
+    <h2 class="headline-1 section-title text-center">Our Collection</h2>
+
+    <ul class="grid-list">
+  <li>
+    <div class="menu-card hover:card">
+      <figure class="card-banner img-holder" style="width: 80px; height: 80px;">
+        <img src="./assets/images/menu-1.png" width="80" height="80" loading="lazy" alt="Woolen Tote Bag" class="img-cover" />
+      </figure>
+
+      <div>
+        <div class="title-wrapper">
+          <h3 class="title-3">
+            <a href="#" class="card-title">Woolen Tote Bag</a>
+          </h3>
+
+          <span class="badge label-1">New</span>
+
+          <span class="span title-2">$75.00</span>
+        </div>
+
+        <p class="card-text label-1">
+          A spacious Woolen Tote for everyday use, combining style with functionality.
+        </p>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="menu-card hover:card">
+      <figure class="card-banner img-holder" style="width: 80px; height: 80px;">
+        <img src="./assets/images/menu-2.png" width="80" height="80" loading="lazy" alt="Silk Scarf" class="img-cover" />
+      </figure>
+
+      <div>
+        <div class="title-wrapper">
+          <h3 class="title-3">
+            <a href="#" class="card-title">Silk Scarf</a>
+          </h3>
+
+          <span class="span title-2">$40.00</span>
+        </div>
+
+        <p class="card-text label-1">
+          A luxurious silk scarf perfect for adding elegance to any outfit.
+        </p>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="menu-card hover:card">
+      <figure class="card-banner img-holder" style="width: 80px; height: 80px;">
+        <img src="./assets/images/menu-3.png" width="80" height="80" loading="lazy" alt="beaded tops" class="img-cover" />
+      </figure>
+
+      <div>
+        <div class="title-wrapper">
+          <h3 class="title-3">
+            <a href="#" class="card-title">Beaded tops</a>
+          </h3>
+
+          <span class="span title-2">$25.00</span>
+        </div>
+
+        <p class="card-text label-1">
+          A soft and breathable beaded tops, ideal for everyday comfort and style.
+        </p>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="menu-card hover:card">
+      <figure class="card-banner img-holder" style="width: 80px; height: 80px;">
+        <img src="./assets/images/menu-4.png" width="80" height="80" loading="lazy" alt="Woven Handbag" class="img-cover" />
+      </figure>
+
+      <div>
+        <div class="title-wrapper">
+          <h3 class="title-3">
+            <a href="#" class="card-title">Woven Handbag</a>
+          </h3>
+
+          <span class="badge label-1">New</span>
+
+          <span class="span title-2">$55.00</span>
+        </div>
+
+        <p class="card-text label-1">
+          A chic woven handbag perfect for adding a touch of bohemian flair to your outfit.
+        </p>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="menu-card hover:card">
+      <figure class="card-banner img-holder" style="width: 80px; height: 80px;">
+        <img src="./assets/images/menu-5.png" width="80" height="80" loading="lazy" alt="Knit Sweater" class="img-cover" />
+      </figure>
+
+      <div>
+        <div class="title-wrapper">
+          <h3 class="title-3">
+            <a href="#" class="card-title">Knit Sweater</a>
+          </h3>
+
+          <span class="span title-2">$65.00</span>
+        </div>
+
+        <p class="card-text label-1">
+          A cozy, hand-knitted sweater made for comfort and warmth.
+        </p>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="menu-card hover:card">
+      <figure class="card-banner img-holder" style="width: 80px; height: 80px;">
+        <img src="./assets/images/menu-6.png" width="80" height="80" loading="lazy" alt=" Scarf" class="img-cover" />
+      </figure>
+
+      <div>
+        <div class="title-wrapper">
+          <h3 class="title-3">
+            <a href="#" class="card-title">Top & Skirt</a>
+          </h3>
+
+          <span class="span title-2">$45.00</span>
+        </div>
+
+        <p class="card-text label-1">
+          A durable design, designed for the modern lifestyle.
+        </p>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
+    <p class="menu-text text-center">
+      Available daily from <span class="span">6:00 am</span> to <span class="span">11:00 pm</span>
+    </p>
+
+    <a href="https://wa.me/254759603214?text=Hello%2C%20I%20would%20like%20to%20make%20a%20custom%20order." class="btn btn-primary">
+      <span class="text text-1">View More</span>
+
+      <span class="text text-2" aria-hidden="true">View All Products</span>
+    </a>
+
+    <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-2 move-anim" />
+    <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim" />
+  </div>
+</section>
+
+
+        <!-- 
+        - #TESTIMONIALS
+      -->
+
+  <section
+  class="section testi text-center has-bg-image"
+  style="background-color: rgb(8, 8, 9);"
+  aria-label="testimonials"
+>
+
+  <div class="container">
+    <div class="quote">”</div>
+
+    <p class="headline-2 testi-text">
+      I can't imagine my daily life without this bag. It's stylish, practical, and
+      durable. I’ve received so many compliments on it!
+    </p>
+
+    <div class="wrapper">
+      <div class="separator"></div>
+      <div class="separator"></div>
+      <div class="separator"></div>
+    </div>
+
+    <div class="profile">
+      <img
+        src="./assets/images/testi-avatar.jpg"
+        width="100"
+        height="100"
+        loading="lazy"
+        alt="Alex Johnson"
+        class="img"
+      />
+
+      <p class="label-2 profile-name">Mary Namalwa</p>
+    </div>
+  </div>
+</section>
+<section class="reservation"id="contact">
+  <div class="container">
+    <div class="form reservation-form bg-black-10">
+      <form action="" class="form-left">
+        <h2 class="headline-1 text-center">Order Your Bag Online</h2>
+
+        <p class="form-text text-center">
+          Need assistance? Call us at
+          <a href="tel:+88123123456" class="link">+254759602314</a>
+          or fill out the form below to make an order.
+        </p>
+
+        <div class="input-wrapper">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            autocomplete="off"
+            class="input-field"
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            autocomplete="off"
+            class="input-field"
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <div class="icon-wrapper">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+            <select name="bag-type" class="input-field">
+              <option value="tote">Tote</option>
+              <option value="Scarf">Scarf</option>
+              <option value="handbag">Handbag</option>
+              <option value="duffel">CropTop</option>
+            </select>
+
+            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+          </div>
+
+          <div class="icon-wrapper">
+            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+            <input
+              type="date"
+              name="order-date"
+              class="input-field"
+            />
+
+            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+          </div>
+
+          <div class="icon-wrapper">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+            <select name="preferred-time" class="input-field">
+              <option value="10:00am">6:00 AM</option>
+              <option value="01:00pm">01:00 PM</option>
+              <option value="03:00pm">03:00 PM</option>
+              <option value="06:00pm">11:00 PM</option>
+            </select>
+
+            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+          </div>
+        </div>
+
+        <textarea
+          name="message"
+          placeholder="Additional Comments"
+          autocomplete="off"
+          class="input-field"
+        ></textarea>
+
+       <button type="button" class="btn btn-secondary" onclick="window.location.href='https://wa.me/254759603214?text=Hello%2C%20I%20would%20like%20to%20place%20an%20order.'">
+  <span class="text text-1">Place Order</span>
+  <span class="text text-2" aria-hidden="true">Place Order</span>
+</button>
+
+      </form>
+
+      <div
+        class="form-right text-center"
+        style="background-image: url('./assets/images/form-pattern.png');"
+      >
+        <h2 class="headline-1 text-center">Contact Us</h2>
+
+        <p class="contact-label">Order Inquiry</p>
+
+        <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
+          +254759602314
+        </a>
+
+        <div class="separator"></div>
+
+        <p class="contact-label">Location</p>
+
+        <address class="body-4">
+          University Way,Nairobi,KE
+        </address>
+
+        <p class="contact-label">Working Hours</p>
+
+        <p class="body-4">
+          Monday to Saturday <br />
+          6:00 AM - 11:00 PM
+        </p>
+
+        <p class="contact-label">Sundays</p>
+
+        <p class="body-4">
+          Closed
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        <!-- 
+        - #FEATURES
+      -->
+
+        <section class="section features text-center" aria-label="features">
+  <div class="container">
+    <p class="section-subtitle label-2">Why Choose Us</p>
+
+    <h2 class="headline-1 section-title">Our Strengths</h2>
+
+    <ul class="grid-list">
+      <li class="feature-item">
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-tshirt" style="font-size: 80px; color: #444;"></i>
+          </div>
+
+          <h3 class="title-2 card-title">Stylish Tops</h3>
+
+          <p class="label-1 card-text">
+            Trendy designs that fit every occasion. Explore the latest collection.
+          </p>
+        </div>
+      </li>
+
+      <li class="feature-item">
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-suitcase" style="font-size: 80px; color: #444;"></i>
+          </div>
+
+          <h3 class="title-2 card-title">Quality Bags</h3>
+
+          <p class="label-1 card-text">
+            Durable and elegant bags, perfect for everyday use and travel.
+          </p>
+        </div>
+      </li>
+
+      <li class="feature-item">
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-shirt" style="font-size: 80px; color: #444;"></i>
+          </div>
+
+          <h3 class="title-2 card-title">Comfortable Clothing</h3>
+
+          <p class="label-1 card-text">
+            Clothes that combine comfort with modern styles for all body types.
+          </p>
+        </div>
+      </li>
+
+      <li class="feature-item">
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-gift" style="font-size: 80px; color: #444;"></i>
+          </div>
+
+          <h3 class="title-2 card-title">Gift Items</h3>
+
+          <p class="label-1 card-text">
+            Perfect for special occasions, our curated collection of bags and tops.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+        <!-- 
+        - #EVENT
+      -->
+<section class="section event bg-black-10" aria-label="event">
+  <div class="container">
+    <p class="section-subtitle label-2 text-center">Recent Updates</p>
+
+    <h2 class="section-title headline-1 text-center">
+      Upcoming Events
+    </h2>
+
+    <ul class="grid-list">
+      <li>
+        <div class="event-card has-before hover:shine">
+          <div class="card-banner img-holder" style="--width: 350; --height: 450">
+            <img src="./assets/images/event-1.jpg" width="350" height="450" loading="lazy" alt="Latest Fashion Bags" class="img-cover" />
+            <time class="publish-date label-2" datetime="2024-12-15">15/12/2024</time>
+          </div>
+
+          <div class="card-content">
+            <p class="card-subtitle label-2 text-center">
+              Bags & Accessories
+            </p>
+
+            <h3 class="card-title title-2 text-center">
+              Explore the Latest in Fashion Bags
+            </h3>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="event-card has-before hover:shine">
+          <div class="card-banner img-holder" style="--width: 350; --height: 450">
+            <img src="./assets/images/event-2.jpg" width="350" height="450" loading="lazy" alt="Trendy Fashion Tops" class="img-cover" />
+            <time class="publish-date label-2" datetime="2024-11-25">25/11/2024</time>
+          </div>
+
+          <div class="card-content">
+            <p class="card-subtitle label-2 text-center">
+              Fashion Tops
+            </p>
+
+            <h3 class="card-title title-2 text-center">
+              Upcoming Trends in Fashion Tops
+            </h3>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="event-card has-before hover:shine">
+          <div class="card-banner img-holder" style="--width: 350; --height: 450">
+            <img src="./assets/images/event-3.jpg" width="350" height="450" loading="lazy" alt="Fashion Accessories" class="img-cover" />
+            <time class="publish-date label-2" datetime="2024-12-01">01/12/2024</time>
+          </div>
+
+          <div class="card-content">
+            <p class="card-subtitle label-2 text-center">Accessories</p>
+
+            <h3 class="card-title title-2 text-center">
+              Trendy Accessories You Can't Miss
+            </h3>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <a href="https://lenoxportfolio.netlify.app/" class="btn btn-primary">
+      <span class="text text-1">View Our Blog</span>
+
+      <span class="text text-2" aria-hidden="true">View Our Blog</span>
+    </a>
+  </div>
+</section>
+
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+  class="footer section has-bg-image text-center"
+  style="background-image: url('./assets/images/footer-bg.jpg')"
+>
+  <div class="container">
+    <div class="footer-top grid-list">
+      <div class="footer-brand has-before has-after">
+        <a href="#" class="logo" style="text-decoration: none; display: flex; align-items: center;">
+          <i class="fas fa-gem" style="color: #f5deb3; font-size: 3rem; margin-right: 10px;"></i>
+          <span style="font-size: 2rem; color: #f5deb3;">Divine The Label</span>
+        </a>
+
+        <address class="body-4">University Way, Nairobi</address>
+        <a href="mailto:booking@grilli.com" class="body-4 contact-link">wawireangela6@gmail.com</a>
+        <a href="tel:+88123123456" class="body-4 contact-link">Booking Request: +254759602314</a>
+        <p class="body-4">Open: 6:00 am - 11:00 pm</p>
+
+        <div class="wrapper">
+          <div class="separator"></div>
+          <div class="separator"></div>
+          <div class="separator"></div>
+        </div>
+
+        <p class="title-1">Get News & Offers</p>
+        <p class="label-1">
+          Subscribe & Get Offers <span class="span">25% Off.</span>
+        </p>
+
+        <form action="" class="input-wrapper">
+          <div class="icon-wrapper">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            <input
+              type="email"
+              name="email_address"
+              placeholder="Your email"
+              autocomplete="off"
+              class="input-field"
+            />
+          </div>
+
+          <button type="button" class="btn btn-secondary" onclick="window.location.href='mailto:wawireangela6@gmail.com?subject=I%20would%20like%20to%20subscribe'">
+            <span class="text text-1">Subscribe</span>
+            <span class="text text-2" aria-hidden="true">Subscribe</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Social Media Links with improved design -->
+      <div class="footer-social-media">
+        <p class="title-2" style="color: #f5deb3; font-size: 1.5rem; margin-bottom: 20px;">Follow Us</p>
+        <div class="social-icons" style="display: flex; justify-content: center; gap: 20px;">
+          <a href="https://facebook.com" class="social-icon" style="color: #f5deb3; font-size: 2rem;">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com" class="social-icon" style="color: #f5deb3; font-size: 2rem;">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com" class="social-icon" style="color: #f5deb3; font-size: 2rem;">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://wa.me/254759603214" class="social-icon" style="color: #f5deb3; font-size: 2rem;">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2024 Divine The Label. All Rights Reserved | Crafted by
+        <a href="https://github.com/Lenox001" target="_blank" class="link">Lenox001</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Add the following link to include FontAwesome icons -->
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
